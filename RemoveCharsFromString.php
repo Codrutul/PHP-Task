@@ -2,6 +2,7 @@
 
 
 function removeCharsFromString($string, $chars): string{
+    // removes all the characters of $chars from $string
     for($i = 0; $i < strlen($chars); $i++){
         $string = str_replace($chars[$i], "", $string);
     }

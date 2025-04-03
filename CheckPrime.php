@@ -1,6 +1,7 @@
 <?php
 
 function checkPrime($number): bool{
+    // checks if $number is prime
     if ($number < 4) {
         return true;
     }

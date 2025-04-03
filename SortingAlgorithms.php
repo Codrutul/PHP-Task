@@ -103,6 +103,7 @@ function isSorted($array): bool {
 
 
 function sortAndPrintArray(): void {
+    // parses the given string into an array, sorts it with the selected algorithm and prints it on the screen
     $inputString = $_POST['numbers'];
     $arrayToBeSorted = array_map('intval', explode(' ', trim($inputString)));
     $arrayToBeSorted = array_filter($arrayToBeSorted);

@@ -2,6 +2,7 @@
 
 
 function FibonacciSequenceGenerator(int $numberOfElements): array{
+    // generates the first $numberOfElements elements of the Fibonacci sequence
     if ($numberOfElements === 0) {
         return [];
     }
@@ -20,7 +21,7 @@ function FibonacciSequenceGenerator(int $numberOfElements): array{
 
 }
 
-function printSequence():void{
+function printSequence(): void{
     $number = $_POST["number"];
     $fibonacciSequence = FibonacciSequenceGenerator($number);
     foreach ($fibonacciSequence as $val) {
